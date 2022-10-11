@@ -1,0 +1,212 @@
+body{
+    width: 100%;
+    height: 100%;
+}
+
+
+.home{
+    user-select: none;
+    display: flex;
+
+}
+
+.user{
+    background-color: rgb(123, 113, 214);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 280px;
+    width: 20%;
+    border-radius: 20px;
+    padding: 20px 40px;
+}
+.user_profile{
+    width: 100%;
+}
+.active{
+    margin: 20px 0;
+}
+.activate{
+    background: none;
+    color: white;
+    border-radius: 20px;
+    border: 2px solid #fff;
+}
+.user_time{
+    width: 100%;
+    margin: 0px 20px;
+    display: grid;
+    grid-template-columns: repeat(2,40%);
+    grid-template-rows: repeat(2,1fr);
+    grid-gap: 30px;
+    grid-auto-flow: row;
+}
+.txt{
+    font-size: 12px;
+    font-family: 100px;
+    margin: 20px 0 5px 0;
+    letter-spacing: 1.3px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.img{
+    pointer-events: none;
+    border: 3px solid #000;
+    border-radius: 50%;
+    padding: 10px;
+    width: 7vw;
+    height: 7vw;
+    margin: 0 0 20px 0;
+    filter: invert(1);
+}
+.user_name > p {
+    font-size: 20px;
+    margin: 0px 0 10px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+
+}
+.add{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(173, 173, 173, 0.2);
+    width: 100%;
+    border-radius: 20px;
+    border: none;
+    font-size: 30px;
+    color: white;
+    font-weight: 100;
+}
+.addBtn{
+    width: 100%;
+    height: 100%;
+    background:none;
+    border: none; 
+    cursor: pointer;
+}
+.add_img{
+    width: 100px;
+    height: 100px;
+    filter: invert(1);
+    pointer-events: none;
+}
+.add:hover{
+    background-color: rgba(173, 173, 173, 0.15);
+    border-radius: 20px;
+}
+@media screen and (max-width:950px) and (min-width:730px) {
+    .user_time{
+        grid-template-columns: repeat(2,50%);
+    }
+    .user{
+        height: 160px;
+        width: 20%;
+        border-radius: 20px;
+        padding:40px;
+    }
+    .user_name > p {
+        font-size: 16px;
+        margin: 0px 0 10px;
+    }
+    .img{
+        margin: 0 0 10px 0;
+    }
+}
+@media screen and (max-width:729px) and (min-width:500px){
+    .home{
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .user_name > p {
+        font-size: 18px;
+    }
+    .user_time{
+        grid-template-columns: repeat(2,1fr);
+    
+    }
+    .user{
+        margin: 0 0 50px 0;
+        flex-direction: row;
+        height: 50px;
+        width: 100%;
+        padding: 20px 0;
+        border-radius: 20px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .user_profile{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .txt{
+        padding: 0;
+        margin: 0;
+        font-size: 10px;
+        text-align: center;
+    }
+    .user_name{
+        display: flex;
+        
+    }
+    .user_name > p{
+        margin: 15px 20px;
+    }
+    .img{
+        margin: 30px;
+        width: 30px;
+        height: 30px;
+    }
+
+}
+@media screen and (max-width:561px) and (min-width:375px){
+    .home{
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .user_time{
+        grid-template-columns: repeat(1,1fr);
+    
+    }
+    
+    .user{
+        margin: 0 0 50px 0;
+        flex-direction: row;
+        height: 70px;
+        width: 100%;
+        padding: 10px 0 ;
+        border-radius: 20px;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .user_profile{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .txt{
+        display: none;
+    }
+    .user_name{
+        display: flex;
+        
+    }
+    
+    .user_name > p {
+        padding: 0 10px 0 0;
+        font-size: 3vw;
+        margin: 0;
+    }
+    .img{
+        margin: 30px;
+        width: 30px;
+        height: 30px;
+    }
+}

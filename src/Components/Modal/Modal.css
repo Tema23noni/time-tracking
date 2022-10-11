@@ -1,0 +1,158 @@
+.modal{
+    background-color: rgba(0, 0, 0, 0.241);
+    position: fixed;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.modal-active{
+    display: flex;
+    padding: 40px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+    height: 350px;
+    width: 400px;
+    border-radius: 20px;
+    color: black;
+    font-size: 18px;
+    
+    box-shadow: inset rgba(0, 0, 0, 0.241);
+    background-color: rgba(255, 255, 255, 1);
+}
+.creative-deadline{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.todo{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+.todo > input{
+    border: 2px solid #42434893;
+    border-radius: 20px;
+    padding: 10px 20px;
+    text-align: center;
+    margin: 20px;
+}
+.deadline-todo{
+    display: flex;
+    align-items: center;
+}
+.time{
+    display: flex;
+    align-items: center;
+
+}
+.send_deadline>button{
+    border: 2px solid #fff;
+    background-color: rgb(123, 113, 214);
+    color: white;
+    font-size: 16px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    padding: 16px 20px;
+    border-radius: 20px;
+}
+.icons{
+    position: relative;
+    padding: 10px 5px;
+    margin: 20px 0 ;
+    border: 2px solid rgb(123, 113, 214);
+    border-radius: 20px;
+    
+}
+
+.dayToDo{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0 0 0;
+
+}
+.dayToDo > label{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.dayToDo > label > p{
+    margin: 0;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+.icons > option{
+    padding: 20px;
+}
+.icons > option:checked{
+    background-color: rgb(123, 113, 214);
+    color: white;
+}
+.icons-select:hover{
+    background-color: rgb(123, 113, 214);
+    color: white;
+}
+
+
+.input-number {
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    background: #FFFFFF;
+    border: 1px solid #E5E8EE;
+    box-sizing: border-box;
+    border-radius: 6px;
+    color: #424348;
+    font-size: 14px;
+    text-align: center;
+    width: calc(33px * 3);
+}
+
+.input-number__input {
+    background: #E5E8EE;
+    width: 20px;
+    height: 20px;
+    border: none;
+    padding: 8px;}
+    
+.input-number__minus,.input-number__plus {
+    width: 32px;
+    height: 32px;
+    font-size: 20px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    user-select: none;
+}
+@media screen and (max-width:601px) and (min-width:375px){
+    .modal-active{
+        height: 450px;
+        width: 300px;
+    }
+    .todo{
+        flex-direction: column;
+    }
+    .deadline-todo{
+        flex-direction: column;
+    }
+    .input-number__input{
+        margin:10px 0px;
+    }
+    .dayToDo{
+        flex-direction: column;
+    }
+    .icons{
+        text-align: center;
+        margin: 20px;
+    }
+}

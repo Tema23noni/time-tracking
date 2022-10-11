@@ -1,0 +1,140 @@
+.center{
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.content{
+    background-color: rgb(99, 92, 197);
+    position: relative;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    border-radius: 20px;
+    padding: 20px;
+    border: 3px solid rgb(255, 255, 255);
+    -webkit-box-shadow: 3px 4px 28px 16px rgba(34, 60, 80, 0.4) inset;
+    -moz-box-shadow: 3px 4px 28px 16px rgba(34, 60, 80, 0.4) inset;
+    box-shadow: 3px 4px 28px 16px rgba(34, 60, 80, 0.4) inset;
+  }
+  .content:hover{
+    box-shadow: none; 
+  }
+  .signin{
+    width: 100%;
+    flex-direction: column;
+  }
+  .block{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+  .blockUserN{
+    display: flex;
+    justify-content: center;
+  }
+  input[type='file']{
+    display: none;
+  }
+  .addUserImage{
+  
+    position: relative;
+    display: block;
+    background: url('https://img.icons8.com/external-tanah-basah-glyph-tanah-basah/48/000000/external-photo-multimedia-tanah-basah-glyph-tanah-basah.png') 50%/50% no-repeat;
+    width: 100px;
+    cursor: pointer;
+    border-radius: 50%;
+    
+    height: 100px;
+    background-color: white;
+    
+    overflow: hidden;
+    border: 2px solid rgb(78, 72, 153);
+  }
+  .userImage{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p{
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+input{
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    font-size: 18px;
+   
+}
+input:hover{
+    background-color: rgba(237, 237, 237, 0.9);
+}
+input::placeholder{
+    font-size: 14px;
+}
+.comein{
+    display: flex;
+    justify-content: center;
+    margin: 30px 0 0 0;
+}
+.adduser{
+    padding: 10px 30px;
+    border-radius: 30px;
+    border: 1px solid #000;
+    background: white;
+}
+@media screen and (max-width: 950px) and (min-width:571px) {
+  .blockUserN{
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 570px) and (min-width: 375px) {
+  .blockUserN{
+    flex-direction: column;
+  }
+    .content{
+        justify-content: space-between;
+        height: 350px;
+        border-radius: 30px;
+    }
+    .block{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .addUserImage{
+        position: absolute;
+        top: 5%;
+        width: 80px;
+        height: 80px;
+    }
+    input{
+        position: relative;
+        padding: 10px 10px;
+        margin: 20px;
+        font-size: 16px;
+        width: 250px;
+    }
+    input::placeholder{
+        font-size: 14px;
+    }
+    .adduser{
+        position: absolute;
+        top: 80%;
+        padding: 5px 30px;
+    }
+}
